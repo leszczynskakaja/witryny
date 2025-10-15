@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Bucik</title>
+  <style>
+    canvas {
+      border: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+
+  <canvas id="rysunek" width="600" height="350"></canvas>
+
+  <script>
+    const canvas = document.getElementById('rysunek');
+    const ctx = canvas.getContext('2d');
+//pierwszy prostokat
+    ctx.fillStyle = 'lightgrey';
+    ctx.fillRect(100, 300, 380, 15);
+
+    ctx.strokeStyle = 'grey';
+    ctx.lineWidth = 3;
+    ctx.strokeRect(100, 300, 380, 15);
+//koniec prostokatu
+
+//drugi prostokacik
+ ctx.fillStyle = 'pink';
+    ctx.fillRect(100, 100, 150, 200);
+
+    ctx.strokeStyle = 'grey';
+    ctx.lineWidth = 3;
+    ctx.strokeRect(100, 100, 150, 200);
+//koniec drugiego prostokaciku
+
+//trzeci prostokat
+ctx.fillStyle = 'lightgrey';
+    ctx.fillRect(250, 200, 210, 100);
+
+    ctx.strokeStyle = 'grey';
+    ctx.lineWidth = 3;
+    ctx.strokeRect(250, 200, 210, 100);
+//koniec trzeciego prostokacika
+
+//pierwsze koleczko
+    ctx.beginPath();
+    ctx.arc(462, 250, 50, 1.6, 1.5 * Math.PI, true);
+    ctx.fillStyle = 'pink';
+    ctx.fill();
+    ctx.strokeStyle = 'grey';
+    ctx.stroke();
+//koniec pierwszego koleczka
+
+//drugie koleczko
+ctx.beginPath();
+    ctx.arc(170, 180, 30, 0, Math.PI * 2);
+    ctx.fillStyle = 'lightgrey';
+    ctx.fill();
+    ctx.strokeStyle = 'grey';
+    ctx.stroke();
+//koniec drugiego koleczka
+
+    //bucik
+    ctx.font = '20px Arial';
+    ctx.fillStyle = 'purple';
+    ctx.fillText('Bucik', 270, 50);
+  </script>
+
+</body>
+</html>
