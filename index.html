@@ -1,16 +1,31 @@
-<!DOCTYPE html>
-      <html lang="pl-PL">
-      <html>
-		<head>
-		       <meta charset="utf-8">
-		      <title> Kaja Leszczyńska </title>
-		</head>
-		<body>
-<a href="bucik.html" target="strony">But</a>
-		<br>
-<a href="formularz.html" target="strony">Formularz</a>
-		<br>
-<a href="zadanie.html" target="strony">zadanie</a>
-		<br>
-</body>
-</html>
+<html>
+ <head>
+ <title> Leszczyńska 4F</title>
+ <script language="JavaScript">
+  
+  function WinOpen_bucik() 
+ {
+window.open("bucik.html","okienko_bucik","toolbar=no,directories=no,menubar=no,height=380,width=160,top=200,left=200");
+ }
+	 function WinOpen_formularz() 
+ {
+window.open("formularz.html","okienko_formularz","toolbar=no,directories=no,menubar=no,height=380,width=160,top=200,left=200");
+ }
+	 function WinOpen_zadanie() 
+ {
+window.open("zadanie.html","okienko_zadanie","toolbar=no,directories=no,menubar=no,height=380,width=160,top=200,left=200");
+ }
+	 function okno_zamknij()
+ {
+ window.close()
+ }
+ </script>
+ </head>
+<body>
+ <form>
+ <input type="button_bucik" name="bucik" value="Bucik" onclick="WinOpen_bucik(' ')">
+ <input type="button_formularz" name="formularz" value="formularz" onclick="WinOpen_formularz(' ')">
+ <input type="button_zadanie" name="zadanie" value="zadanie" onclick="WinOpen_zadanie(' ')">
+ </form>
+ </body>
+ </html>
